@@ -1,5 +1,5 @@
 # Face Anti-Spoofing Deep Learning Binary Classifier
-## Final Year Project Technical Report
+## Final Semester end Year Project Technical Report
 
 ### 1. Executive Summary
 This project aims to develop a robust, end-to-end Face Anti-Spoofing (FAS) binary classifier to differentiate between genuine faces ("Real") and presentation attacks ("Spoof"). Presentation attacks—such as printed photos or digital replays—pose severe security vulnerabilities to biometric systems.
