@@ -1,5 +1,5 @@
 # Face Anti-Spoofing: Deep Learning Binary Classifier
-** Semester End Year Project Presentation**
+**Semester End Year Project Presentation**
 
 ---
 
