@@ -20,7 +20,7 @@ def evaluate(model_path='models/best_model.pt', data_dir='data'):
 
     model = FASModel(pretrained=False)
     if os.path.exists(model_path):
-        model.load_state_dict(torch.load(model_path, map_location=device))
+        model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
         print(f"Loaded model from {model_path}")
     else:
         print(f"Model file {model_path} not found. Ensure you have trained the model.")
