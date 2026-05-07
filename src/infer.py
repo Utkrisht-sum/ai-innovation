@@ -65,7 +65,7 @@ def infer_single_image(image_path, model_path='models/best_model.pt'):
     if not os.path.exists(model_path):
         print(f"Error: Model {model_path} not found.")
         return
-    model.load_state_dict(torch.load(model_path, map_location=device))
+    model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
     model.to(device)
     model.eval()
 
@@ -108,7 +108,7 @@ def run_webcam(model_path='models/best_model.pt'):
     device = get_device()
     model = FASModel(pretrained=False)
     try:
-        model.load_state_dict(torch.load(model_path, map_location=device))
+        model.load_state_dict(torch.load(model_path, map_location=device, weights_only=True))
     except FileNotFoundError:
         print(f"Error: Model {model_path} not found. Please train first.")
         return
