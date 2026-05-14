@@ -42,7 +42,7 @@ This repository contains an end-to-end implementation of a Face Anti-Spoofing (F
        ├── 0_real/
        └── 1_spoof/
    ```
-   *Alternatively, generate a dummy dataset for quick testing:*
+   *On the other hand, generate a dummy dataset for quick testing:*
    ```bash
    PYTHONPATH=src python -c "from src.dataset import generate_mock_dataset; generate_mock_dataset('data')"
    ```
